@@ -1,0 +1,14 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: ubuntu-13.04
+- name: ubuntu-12.04
+- name: centos-6.4
+
+suites:
+- name: default
+  run_list:
+  - recipe[ut_base]
