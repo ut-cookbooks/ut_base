@@ -4,6 +4,7 @@ gem 'rake'
 gem 'foodcritic'
 
 group :development do
+  gem 'chef', '~> 11.4.4'
   gem 'emeril', '~> 0.6.0'
 end
 
