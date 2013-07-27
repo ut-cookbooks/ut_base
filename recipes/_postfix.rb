@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: ut_base
-# Recipe:: default
+# Recipe:: _postfix
 #
 # Copyright 2013, Fletcher Nichol
 #
@@ -17,11 +17,7 @@
 # limitations under the License.
 #
 
-include_recipe "ut_base::_repos"
-include_recipe "ut_base::_ssh"
-include_recipe "ut_base::_compiler"
-include_recipe "ut_base::_mosh"
-include_recipe "ut_base::_git"
-include_recipe "ut_base::_packages"
-include_recipe "ut_base::_postfix"
-include_recipe "ut_base::_sudo"
+# bail out if we're on a mac
+return if platform_family?("mac_os_x")
+
+include_recipe "postfix"

@@ -17,4 +17,6 @@
 # limitations under the License.
 #
 
-%w(gawk curl htop mg ntp tree unzip vim wget).each { |pkg| package(pkg) }
+%w(gawk curl mg tree unzip wget).each { |pkg| package(pkg) }
+
+%w(htop ntp vim).each { |pkg| package(pkg) } unless platform_family?("mac_os_x")

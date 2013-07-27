@@ -17,6 +17,9 @@
 # limitations under the License.
 #
 
+# bail out if we're on a mac
+return if platform_family?("mac_os_x")
+
 node.set['authorization']['sudo']['groups'] = value_for_platform_family(
   %w(rhel fedora) => %w(wheel),
   "default"       => %w(admin sudo)
