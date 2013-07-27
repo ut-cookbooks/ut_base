@@ -160,7 +160,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 [apt_cb]:         http://community.opscode.com/cookbooks/apt
-[build_essential]: http://community.opscode.com/cookbooks/build-essential
+[build_essential_cb]: http://community.opscode.com/cookbooks/build-essential
 [git_cb]:         http://community.opscode.com/cookbooks/git
 [homebrew_cb]:    http://community.opscode.com/cookbooks/homebrew
 [mosh_cb]:        http://community.opscode.com/cookbooks/mosh
