@@ -21,4 +21,6 @@ if platform_family?("debian")
   include_recipe "apt"
 elsif platform_family?("rhel", "fedora")
   include_recipe "yum::epel"
+elsif platform_family?("mac_os_x")
+  include_recipe "homebrew"
 end

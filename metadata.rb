@@ -11,11 +11,13 @@ supports "debian"
 supports "centos"
 supports "mac_os_x"
 
+# please see Berksfile for any special/specific versions for forks
 depends "apt",              '~> 2.0.0'
 depends "build-essential",  '~> 1.4.0'
 depends "git",              '~> 2.5.2'
-depends "openssh",          '~> 1.2.0'
+depends "homebrew"          # forked version
 depends "mosh",             '~> 0.3.0'
+depends "openssh",          '~> 1.2.0'
 depends "postfix",          '~> 2.1.6'
 depends "sudo",             '~> 2.1.4'
 depends "yum",              '~> 2.3.0'
