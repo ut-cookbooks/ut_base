@@ -1,3 +1,8 @@
+## 1.0.2 / 2013-07-28
+
+* Add tmux and screen to base packages. (@fnichol)
+
 ## 1.0.0 / 2013-07-27
 
 The initial release.
+
