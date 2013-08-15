@@ -1,6 +1,12 @@
+## 1.0.2 / 2013-08-14
+
+* Remove screen package from mac\_os\_x as brew nuked formula. ([@fnichol][])
+
+
 ## 1.0.2 / 2013-07-28
 
 * Add tmux and screen to base packages. ([@fnichol][])
+
 
 ## 1.0.0 / 2013-07-27
 
