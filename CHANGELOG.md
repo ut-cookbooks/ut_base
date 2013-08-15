@@ -1,4 +1,9 @@
-## 1.0.2 / 2013-08-14
+## 1.0.6 / 2013-08-14
+
+* Remove unzip package from mac\_os\_x as brew nuked formula. ([@fnichol][])
+
+
+## 1.0.4 / 2013-08-14
 
 * Remove screen package from mac\_os\_x as brew nuked formula. ([@fnichol][])
 
