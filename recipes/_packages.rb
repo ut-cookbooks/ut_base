@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-%w(gawk curl mg tmux tree wget).each { |pkg| package(pkg) }
+%w(gawk curl mg pstree tmux tree wget).each { |pkg| package(pkg) }
 
 if platform_family?("debian")
-  %w(htop ntp screen unzip vim).each { |pkg| package(pkg) }
+  %w(htop ntp psmisc screen tmux unzip vim).each { |pkg| package(pkg) }
 end
