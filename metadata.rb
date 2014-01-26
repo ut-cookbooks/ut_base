@@ -15,7 +15,7 @@ supports "mac_os_x"
 depends "apt",              '~> 2.0.0'
 depends "build-essential",  '~> 1.4.0'
 depends "git",              '~> 2.5.2'
-depends "homebrew"          '~> 1.4'
+depends "homebrew",         '~> 1.4'
 depends "mosh",             '~> 0.3.0'
 depends "openssh",          '~> 1.2.0'
 depends "postfix",          '~> 2.1.6'
