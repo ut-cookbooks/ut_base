@@ -1,3 +1,10 @@
+## 1.2.0 / 2014-01-26
+
+### Improvements
+
+* Update cookbook dependencies, use modern tmux on ubuntu-12.04. ([@fnichol][])
+
+
 ## 1.1.0 / 2014-01-26
 
 ### New features
