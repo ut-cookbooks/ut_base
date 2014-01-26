@@ -1,3 +1,14 @@
+## 1.1.0 / 2014-01-26
+
+### New features
+
+* Add Xcode installation support for Mac platforms. ([@fnichol][])
+
+### Improvements
+
+* Update homebrew cookbook back to upstream 1.4.0 or later. ([@fnichol][])
+
+
 ## 1.0.6 / 2013-08-14
 
 * Remove unzip package from mac\_os\_x as brew nuked formula. ([@fnichol][])
