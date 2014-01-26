@@ -42,13 +42,16 @@ This cookbook depends on the following external cookbooks:
 
 * [apt][apt_cb]
 * [build-essential][build_essential_cb]
+* [chef-sugar][chef_sugar_cb]
 * [git][git_cb]
-* [homebrew][homebrew_cb] (currently forked)
-* [openssh][openssh_cb]
+* [homebrew][homebrew_cb]
 * [mosh][mosh_cb]
+* [openssh][openssh_cb]
 * [postfix][postfix_cb]
 * [sudo][sudo_cb]
-* [yum][yum_cb]
+* [ubuntu][ubuntu_cb]
+* [xcode][xcode_cb] (currently forked)
+* [yum-epel][yum_epel_cb]
 
 ## <a name="installation"></a> Installation
 
@@ -161,13 +164,16 @@ limitations under the License.
 
 [apt_cb]:         http://community.opscode.com/cookbooks/apt
 [build_essential_cb]: http://community.opscode.com/cookbooks/build-essential
+[chef_sugar_cb]:  http://community.opscode.com/cookbooks/chef-sugar
 [git_cb]:         http://community.opscode.com/cookbooks/git
 [homebrew_cb]:    http://community.opscode.com/cookbooks/homebrew
 [mosh_cb]:        http://community.opscode.com/cookbooks/mosh
 [openssh_cb]:     http://community.opscode.com/cookbooks/openssh
 [postfix_cb]:     http://community.opscode.com/cookbooks/postfix
 [sudo_cb]:        http://community.opscode.com/cookbooks/sudo
-[yum_cb]:         http://community.opscode.com/cookbooks/yum
+[ubuntu_cb]:      http://community.opscode.com/cookbooks/ubuntu
+[xcode_cb]:       http://community.opscode.com/cookbooks/xcode
+[yum_epel_cb]:    http://community.opscode.com/cookbooks/yum-epel
 
 [berkshelf]:    http://berkshelf.com/
 [chef_repo]:    https://github.com/opscode/chef-repo
