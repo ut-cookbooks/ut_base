@@ -20,4 +20,5 @@ depends "mosh",             '~> 0.3.0'
 depends "openssh",          '~> 1.2.0'
 depends "postfix",          '~> 2.1.6'
 depends "sudo",             '~> 2.1.4'
+depends "xcode"             # forked version
 depends "yum",              '~> 2.3.0'

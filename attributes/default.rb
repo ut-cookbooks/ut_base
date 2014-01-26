@@ -1,8 +1,8 @@
 #
 # Cookbook Name:: ut_base
-# Recipe:: _repos
+# Attributes:: default
 #
-# Copyright 2013, Fletcher Nichol
+# Copyright 2013l Fletcher Nichol
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,9 @@
 # limitations under the License.
 #
 
-if platform_family?("debian")
-  include_recipe "apt"
-elsif platform_family?("rhel", "fedora")
-  include_recipe "yum::epel"
-end
+default['ut_base']['xcode']['10.9']['url'] = nil
+default['ut_base']['xcode']['10.9']['cli_url'] = nil
+default['ut_base']['xcode']['10.8']['url'] = nil
+default['ut_base']['xcode']['10.8']['cli_url'] = nil
+default['ut_base']['xcode']['10.7']['url'] = nil
+default['ut_base']['xcode']['10.7']['cli_url'] = nil
