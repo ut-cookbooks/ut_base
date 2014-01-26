@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+include_recipe "chef-sugar"
 include_recipe "ut_base::_repos"
 include_recipe "ut_base::_ssh"
 include_recipe "ut_base::_compiler"

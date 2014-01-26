@@ -18,7 +18,20 @@
 #
 
 if platform_family?("debian")
-  include_recipe "apt"
+  if platform?("ubuntu")
+    include_recipe "ubuntu"
+
+    apt_repository "tmux" do
+      uri "http://ppa.launchpad.net/kalakris/tmux/ubuntu"
+      distribution node["lsb"]["codename"]
+      components ["main"]
+      keyserver "keyserver.ubuntu.com"
+      key "63844AC3"
+      only_if { ubuntu_precise? }
+    end
+  else
+    include_recipe "apt"
+  end
 elsif platform_family?("rhel", "fedora")
-  include_recipe "yum::epel"
+  include_recipe "yum-epel"
 end

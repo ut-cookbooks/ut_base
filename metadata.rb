@@ -12,13 +12,15 @@ supports "centos"
 supports "mac_os_x"
 
 # please see Berksfile for any special/specific versions for forks
-depends "apt",              '~> 2.0.0'
-depends "build-essential",  '~> 1.4.0'
-depends "git",              '~> 2.5.2'
+depends "apt",              '~> 2.0'
+depends "build-essential",  '~> 1.4'
+depends "chef-sugar",       '~> 1.1'
+depends "git",              '~> 2.5'
 depends "homebrew",         '~> 1.4'
-depends "mosh",             '~> 0.3.0'
-depends "openssh",          '~> 1.2.0'
-depends "postfix",          '~> 2.1.6'
-depends "sudo",             '~> 2.1.4'
+depends "mosh",             '~> 0.3'
+depends "openssh",          '~> 1.2'
+depends "postfix",          '~> 3.0'
+depends "sudo",             '~> 2.1'
+depends "ubuntu",           '~> 1.1'
 depends "xcode"             # forked version
-depends "yum",              '~> 2.3.0'
+depends "yum-epel",         '~> 0.2'
