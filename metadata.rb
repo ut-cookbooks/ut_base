@@ -22,5 +22,5 @@ depends "openssh",          '~> 1.2'
 depends "postfix",          '~> 3.0'
 depends "sudo",             '~> 2.1'
 depends "ubuntu",           '~> 1.1'
-depends "xcode"             # forked version
+depends "xcode",            '~> 1.1'
 depends "yum-epel",         '~> 0.2'
