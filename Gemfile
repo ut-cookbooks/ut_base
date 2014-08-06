@@ -1,16 +1,20 @@
 source "https://rubygems.org"
 
-gem 'rake'
-gem 'foodcritic'
+gem "rake"
 
 group :development do
-  gem 'chef', '~> 11.12.8'
-  gem 'emeril'
+  gem "berkshelf"
+  gem "chefspec"
+  gem "chef-sugar"
+  gem "emeril"
+  gem "finstyle"
+  gem "foodcritic"
+  gem "guard-rspec"
+  gem "guard-rubocop"
 end
 
 group :integration do
-  gem 'berkshelf'
-  gem 'test-kitchen'
-  gem 'kitchen-vagrant'
-  gem 'kitchen-docker'
+  gem "kitchen-docker"
+  gem "kitchen-vagrant"
+  gem "test-kitchen"
 end

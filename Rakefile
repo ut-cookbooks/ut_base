@@ -1,14 +1,11 @@
 #!/usr/bin/env rake
-require 'foodcritic'
 
-begin
-    require 'emeril/rake'
-rescue LoadError
-    puts ">>>>> Emeril gem not loaded, omitting tasks" unless ENV['CI']
-end
+require 'emeril/rake'
 
-FoodCritic::Rake::LintTask.new do |t|
-  t.options = { :fail_tags => ['any'] }
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:unit) do |t|
+  t.rspec_opts = "--color --format documentation"
+  t.pattern = ["test/unit/**/*_spec.rb"]
 end
 
 begin
@@ -18,4 +15,21 @@ rescue LoadError
   puts ">>>>> Kitchen gem not loaded, omitting tasks" unless ENV['CI']
 end
 
-task :default => [:foodcritic]
+desc "Run all test suites"
+task :test => [:unit]
+
+require 'foodcritic'
+FoodCritic::Rake::LintTask.new do |t|
+  t.options = { :fail_tags => ['any'] }
+end
+
+require "finstyle"
+require "rubocop/rake_task"
+RuboCop::RakeTask.new(:style) do |task|
+  task.options << "--display-cop-names"
+end
+
+desc "Run all quality tasks"
+task :quality => [:foodcritic, :style]
+
+task :default => [:test, :quality]
