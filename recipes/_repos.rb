@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+include_recipe "chef-sugar"
+
 if platform_family?("debian")
   if platform?("ubuntu")
     include_recipe "ubuntu"
