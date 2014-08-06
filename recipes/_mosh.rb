@@ -20,7 +20,7 @@
 if platform_family?("rhel")
   # current mosh source build on rhel isn't totally idempopent, so let's
   # bail if mosh is already installed
-  return if ::File.exists?("/usr/local/bin/mosh")
+  return if ::File.exist?("/usr/local/bin/mosh")
 
   node.set['mosh']['install_type'] = 'source'
 
