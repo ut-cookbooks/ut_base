@@ -7,8 +7,8 @@ group :development do
   gem "chefspec"
   gem "chef-sugar"
   gem "emeril"
-  gem "finstyle"
-  gem "foodcritic"
+  gem "finstyle",   "= 1.1.0"
+  gem "foodcritic", "= 4.0.0"
   gem "guard-rspec"
   gem "guard-rubocop"
 end
