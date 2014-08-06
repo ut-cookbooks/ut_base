@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
-gem "berkshelf"
 gem "chefspec"
 gem "chef-sugar"
 gem "emeril"
 gem "finstyle",   "= 1.1.0"
 gem "foodcritic", "= 4.0.0"
+gem "librarian-chef"
 gem "rake"
 
 group :development do

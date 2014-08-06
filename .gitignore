@@ -1,5 +1,6 @@
 Gemfile.lock
-Berksfile.lock
+Cheffile.lock
 .kitchen/
 .kitchen.local.yml
 .bundle/
+tmp/
