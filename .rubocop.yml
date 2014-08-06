@@ -1,2 +1,7 @@
 Style/FileName:
-  Enabled: false
+  Exclude:
+    - Berksfile
+
+Style/SingleSpaceBeforeFirstArg:
+  Exclude:
+    - metadata.rb
