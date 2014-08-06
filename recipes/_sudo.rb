@@ -21,8 +21,8 @@
 return if platform_family?("mac_os_x")
 
 node.set['authorization']['sudo']['groups'] = value_for_platform_family(
-  %w(rhel fedora) => %w(wheel),
-  "default"       => %w(admin sudo)
+  %w[rhel fedora] => %w[wheel],
+  "default"       => %w[admin sudo]
 )
 
 node.set['authorization']['sudo']['include_sudoers_d']  = true

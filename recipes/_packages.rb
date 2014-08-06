@@ -18,9 +18,9 @@
 #
 
 if platform_family?("debian")
-  %w(htop ntp psmisc screen unzip vim).each { |pkg| package(pkg) }
+  %w[htop ntp psmisc screen unzip vim].each { |pkg| package(pkg) }
 elsif platform_family?("mac_os_x")
-  %w(pstree).each { |pkg| package(pkg) }
+  %w[pstree].each { |pkg| package(pkg) }
 end
 
-%w(gawk curl mg tmux tree wget).each { |pkg| package(pkg) }
+%w[gawk curl mg tmux tree wget].each { |pkg| package(pkg) }
