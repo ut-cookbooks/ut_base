@@ -9,7 +9,7 @@ describe "ut_base::default" do
     ChefSpec::Runner.new(:platform => platform, :version => version)
   end
 
-  let(:node)      { runner.node}
+  let(:node)      { runner.node }
   let(:chef_run)  { runner.converge(described_recipe) }
 
   before do
