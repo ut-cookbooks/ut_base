@@ -18,7 +18,10 @@
 #
 
 if platform_family?("mac_os_x")
-  distro = node["ut_base"]["xcode"]["mac_os_x-#{node["platform_version"].to_f}"]
+  key = "mac_os_x-#{node["platform_version"].to_f}"
+  distro = node["ut_base"]["xcode"][key]
+  raise %{You must set node["ut_base"]["xcode"]["#{key}"]} if distro.nil?
+
   node.set["xcode"]["url"] = distro["url"]
   node.set["xcode"]["cli"]["url"] = distro["cli_url"]
 
