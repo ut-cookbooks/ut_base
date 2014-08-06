@@ -22,7 +22,7 @@ if platform_family?("rhel")
   # bail if mosh is already installed
   return if ::File.exist?("/usr/local/bin/mosh")
 
-  node.set['mosh']['install_type'] = 'source'
+  node.set["mosh"]["install_type"] = "source"
 
   package "boost-devel"
   package "protobuf-devel"

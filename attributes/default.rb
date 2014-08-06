@@ -17,9 +17,9 @@
 # limitations under the License.
 #
 
-default['ut_base']['xcode']['10.9']['url'] = nil
-default['ut_base']['xcode']['10.9']['cli_url'] = nil
-default['ut_base']['xcode']['10.8']['url'] = nil
-default['ut_base']['xcode']['10.8']['cli_url'] = nil
-default['ut_base']['xcode']['10.7']['url'] = nil
-default['ut_base']['xcode']['10.7']['cli_url'] = nil
+default["ut_base"]["xcode"]["10.9"]["url"] = nil
+default["ut_base"]["xcode"]["10.9"]["cli_url"] = nil
+default["ut_base"]["xcode"]["10.8"]["url"] = nil
+default["ut_base"]["xcode"]["10.8"]["cli_url"] = nil
+default["ut_base"]["xcode"]["10.7"]["url"] = nil
+default["ut_base"]["xcode"]["10.7"]["cli_url"] = nil

@@ -3,7 +3,7 @@ maintainer       "Fletcher Nichol"
 maintainer_email "fnichol@nichol.ca"
 license          "Apache 2.0"
 description      "Unicorn Tears Base"
-long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 version          "1.2.1"
 
 supports "ubuntu"
@@ -12,15 +12,15 @@ supports "centos"
 supports "mac_os_x"
 
 # please see Berksfile for any special/specific versions for forks
-depends "apt",              '~> 2.0'
-depends "build-essential",  '~> 1.4'
-depends "chef-sugar",       '~> 1.1'
-depends "git",              '~> 2.5'
-depends "homebrew",         '~> 1.4'
-depends "mosh",             '~> 0.3'
-depends "openssh",          '~> 1.2'
-depends "postfix",          '~> 3.0'
-depends "sudo",             '~> 2.1'
-depends "ubuntu",           '~> 1.1'
-depends "xcode",            '~> 1.1'
-depends "yum-epel",         '~> 0.2'
+depends "apt",              "~> 2.0"
+depends "build-essential",  "~> 1.4"
+depends "chef-sugar",       "~> 1.1"
+depends "git",              "~> 2.5"
+depends "homebrew",         "~> 1.4"
+depends "mosh",             "~> 0.3"
+depends "openssh",          "~> 1.2"
+depends "postfix",          "~> 3.0"
+depends "sudo",             "~> 2.1"
+depends "ubuntu",           "~> 1.1"
+depends "xcode",            "~> 1.1"
+depends "yum-epel",         "~> 0.2"

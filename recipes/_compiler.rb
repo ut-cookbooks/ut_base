@@ -18,9 +18,9 @@
 #
 
 if platform_family?("mac_os_x")
-  distro = node['ut_base']['xcode']["mac_os_x-#{node['platform_version'].to_f}"]
-  node.set['xcode']['url'] = distro['url']
-  node.set['xcode']['cli']['url'] = distro['cli_url']
+  distro = node["ut_base"]["xcode"]["mac_os_x-#{node["platform_version"].to_f}"]
+  node.set["xcode"]["url"] = distro["url"]
+  node.set["xcode"]["cli"]["url"] = distro["cli_url"]
 
   include_recipe "xcode"
 

@@ -20,9 +20,9 @@
 # bail out if we're on a mac
 return if platform_family?("mac_os_x")
 
-node.set['openssh']['server']['permit_root_login']        = 'without-password'
-node.set['openssh']['server']['permit_empty_passwords']   = 'no'
-node.set['openssh']['server']['password_authentication']  = 'no'
-node.set['openssh']['server']['use_dns']                  = 'no'
+node.set["openssh"]["server"]["permit_root_login"]        = "without-password"
+node.set["openssh"]["server"]["permit_empty_passwords"]   = "no"
+node.set["openssh"]["server"]["password_authentication"]  = "no"
+node.set["openssh"]["server"]["use_dns"]                  = "no"
 
 include_recipe "openssh"
