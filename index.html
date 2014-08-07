@@ -30,17 +30,19 @@
 
       </header>
       <section>
-        <p><a href="https://travis-ci.org/ut-cookbooks/ut_base"><img src="https://travis-ci.org/ut-cookbooks/ut_base.png?branch=master" alt="Build Status"></a></p>
+        <p><a href="https://supermarket.getchef.com/cookbooks/ut_base"><img src="http://img.shields.io/cookbook/v/ut_base.svg" alt="Cookbook Version"></a>
+<a href="https://travis-ci.org/ut-cookbooks/ut_base"><img src="http://img.shields.io/travis/ut-cookbooks/ut_base.svg" alt="Build Status"></a></p>
 
 <h2>
-<a name="-description" class="anchor" href="#-description"><span class="octicon octicon-link"></span></a><a name="description"></a> Description</h2>
+<a name="-description" class="anchor" href="#-description"><span class="octicon octicon-link"></span></a>
+<a name="description"></a> Description</h2>
 
 <p>Chef cookbook for a Unicorn Tears baseline node.</p>
 
 <ul>
 <li>Website: <a href="http://ut-cookbooks.github.io/ut_base/">http://ut-cookbooks.github.io/ut_base/</a>
 </li>
-<li>Opscode Community Site: <a href="http://community.opscode.com/cookbooks/ut_base">http://community.opscode.com/cookbooks/ut_base</a>
+<li>Supermarket: <a href="https://supermarket.getchef.com/cookbooks/ut_base">https://supermarket.getchef.com/cookbooks/ut_base</a>
 </li>
 <li>Source Code: <a href="https://github.com/ut-cookbooks/ut_base">https://github.com/ut-cookbooks/ut_base</a>
 </li>
@@ -49,21 +51,25 @@ opinionated about application and configuration defaults. Feel free to try it,
 fork and modify it, or just read and learn.</p>
 
 <h2>
-<a name="-usage" class="anchor" href="#-usage"><span class="octicon octicon-link"></span></a><a name="usage"></a> Usage</h2>
+<a name="-usage" class="anchor" href="#-usage"><span class="octicon octicon-link"></span></a>
+<a name="usage"></a> Usage</h2>
 
 <p>Simply include <code>recipe[ut_base]</code> in your run_list.</p>
 
 <h2>
-<a name="-requirements" class="anchor" href="#-requirements"><span class="octicon octicon-link"></span></a><a name="requirements"></a> Requirements</h2>
+<a name="-requirements" class="anchor" href="#-requirements"><span class="octicon octicon-link"></span></a>
+<a name="requirements"></a> Requirements</h2>
 
 <h3>
-<a name="-chef" class="anchor" href="#-chef"><span class="octicon octicon-link"></span></a><a name="requirements-chef"></a> Chef</h3>
+<a name="-chef" class="anchor" href="#-chef"><span class="octicon octicon-link"></span></a>
+<a name="requirements-chef"></a> Chef</h3>
 
-<p>Tested on 11.6.0 but newer and older version should work just fine.
-File an <a href="https://github.com/ut-cookbooks/ut_base/issues">issue</a> if this isn't the case.</p>
+<p>Tested on 11.14.2 but newer and older version should work just fine.
+File an <a href="https://github.com/ut-cookbooks/ut_base/issues">issue</a> if this isn"t the case.</p>
 
 <h3>
-<a name="-platform" class="anchor" href="#-platform"><span class="octicon octicon-link"></span></a><a name="requirements-platform"></a> Platform</h3>
+<a name="-platform" class="anchor" href="#-platform"><span class="octicon octicon-link"></span></a>
+<a name="requirements-platform"></a> Platform</h3>
 
 <p>The following platforms have been tested with this cookbook, meaning that the
 recipes run on these platforms without error:</p>
@@ -72,127 +78,53 @@ recipes run on these platforms without error:</p>
 <li>ubuntu</li>
 <li>debian</li>
 <li>mac_os_x</li>
+<li>centos</li>
 </ul><p>Please <a href="https://github.com/ut-cookbooks/ut_base/issues">report</a> any additional platforms so they can be added.</p>
 
 <h3>
-<a name="-cookbooks" class="anchor" href="#-cookbooks"><span class="octicon octicon-link"></span></a><a name="requirements-cookbooks"></a> Cookbooks</h3>
+<a name="-cookbooks" class="anchor" href="#-cookbooks"><span class="octicon octicon-link"></span></a>
+<a name="requirements-cookbooks"></a> Cookbooks</h3>
 
 <p>This cookbook depends on the following external cookbooks:</p>
 
 <ul>
-<li><a href="http://community.opscode.com/cookbooks/apt">apt</a></li>
-<li><a href="http://community.opscode.com/cookbooks/build-essential">build-essential</a></li>
-<li><a href="http://community.opscode.com/cookbooks/chef-sugar">chef-sugar</a></li>
-<li><a href="http://community.opscode.com/cookbooks/git">git</a></li>
-<li><a href="http://community.opscode.com/cookbooks/homebrew">homebrew</a></li>
-<li><a href="http://community.opscode.com/cookbooks/mosh">mosh</a></li>
-<li><a href="http://community.opscode.com/cookbooks/openssh">openssh</a></li>
-<li><a href="http://community.opscode.com/cookbooks/postfix">postfix</a></li>
-<li><a href="http://community.opscode.com/cookbooks/sudo">sudo</a></li>
-<li><a href="http://community.opscode.com/cookbooks/ubuntu">ubuntu</a></li>
-<li>
-<a href="http://community.opscode.com/cookbooks/xcode">xcode</a> (currently forked)</li>
-<li><a href="http://community.opscode.com/cookbooks/yum-epel">yum-epel</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/apt">apt</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/build-essential">build-essential</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/chef-sugar">chef-sugar</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/git">git</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/homebrew">homebrew</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/mosh">mosh</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/openssh">openssh</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/postfix">postfix</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/sudo">sudo</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/ubuntu">ubuntu</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/xcode">xcode</a></li>
+<li><a href="https://supermarket.getchef.com/cookbooks/yum-epel">yum-epel</a></li>
 </ul><h2>
-<a name="-installation" class="anchor" href="#-installation"><span class="octicon octicon-link"></span></a><a name="installation"></a> Installation</h2>
-
-<p>Depending on the situation and use case there are several ways to install
-this cookbook. All the methods listed below assume a tagged version release
-is the target, but omit the tags to get the head of development. A valid
-Chef repository structure like the <a href="https://github.com/opscode/chef-repo">Opscode repo</a> is also assumed.</p>
+<a name="-recipes" class="anchor" href="#-recipes"><span class="octicon octicon-link"></span></a>
+<a name="recipes"></a> Recipes</h2>
 
 <h3>
-<a name="-from-the-opscode-community-site" class="anchor" href="#-from-the-opscode-community-site"><span class="octicon octicon-link"></span></a><a name="installation-site"></a> From the Opscode Community Site</h3>
-
-<p>To install this cookbook from the Community Site, use the <em>knife</em> command:</p>
-
-<pre><code>knife cookbook site install ut_base
-</code></pre>
-
-<h3>
-<a name="-using-berkshelf" class="anchor" href="#-using-berkshelf"><span class="octicon octicon-link"></span></a><a name="installation-berkshelf"></a> Using Berkshelf</h3>
-
-<p><a href="http://berkshelf.com/">Berkshelf</a> is a cookbook dependency manager and development
-workflow assistant. To install Berkshelf:</p>
-
-<pre><code>cd chef-repo
-gem install berkshelf
-berks init
-</code></pre>
-
-<p>To use the Community Site version:</p>
-
-<pre><code>echo "cookbook 'ut_base'" &gt;&gt; Berksfile
-berks install
-</code></pre>
-
-<p>Or to reference the Git version:</p>
-
-<pre><code>repo="ut-cookbooks/ut_base"
-latest_release=$(curl -s https://api.github.com/repos/$repo/git/refs/tags \
-| ruby -rjson -e '
-  j = JSON.parse(STDIN.read);
-  puts j.map { |t| t["ref"].split("/").last }.sort.last
-')
-cat &gt;&gt; Berksfile &lt;&lt;END_OF_BERKSFILE
-cookbook 'chgems',
-  :git =&gt; 'git://github.com/$repo.git', :branch =&gt; '$latest_release'
-END_OF_BERKSFILE
-berks install
-</code></pre>
-
-<h3>
-<a name="-using-librarian-chef" class="anchor" href="#-using-librarian-chef"><span class="octicon octicon-link"></span></a><a name="installation-librarian"></a> Using Librarian-Chef</h3>
-
-<p><a href="https://github.com/applicationsonline/librarian#readme">Librarian-Chef</a> is a bundler for your Chef cookbooks.
-To install Librarian-Chef:</p>
-
-<pre><code>cd chef-repo
-gem install librarian
-librarian-chef init
-</code></pre>
-
-<p>To use the Community Site version:</p>
-
-<pre><code>echo "cookbook 'ut_base'" &gt;&gt; Cheffile
-librarian-chef install
-</code></pre>
-
-<p>Or to reference the Git version:</p>
-
-<pre><code>repo="ut-cookbooks/ut_base"
-latest_release=$(curl -s https://api.github.com/repos/$repo/git/refs/tags \
-| ruby -rjson -e '
-  j = JSON.parse(STDIN.read);
-  puts j.map { |t| t["ref"].split("/").last }.sort.last
-')
-cat &gt;&gt; Cheffile &lt;&lt;END_OF_CHEFFILE
-cookbook 'chgems',
-  :git =&gt; 'git://github.com/$repo.git', :ref =&gt; '$latest_release'
-END_OF_CHEFFILE
-librarian-chef install
-</code></pre>
-
-<h2>
-<a name="-recipes" class="anchor" href="#-recipes"><span class="octicon octicon-link"></span></a><a name="recipes"></a> Recipes</h2>
-
-<h3>
-<a name="-default" class="anchor" href="#-default"><span class="octicon octicon-link"></span></a><a name="recipes-default"></a> default</h3>
+<a name="-default" class="anchor" href="#-default"><span class="octicon octicon-link"></span></a>
+<a name="recipes-default"></a> default</h3>
 
 <p>Main recipe which includes all internal recipes.</p>
 
 <h2>
-<a name="-attributes" class="anchor" href="#-attributes"><span class="octicon octicon-link"></span></a><a name="attributes"></a> Attributes</h2>
+<a name="-attributes" class="anchor" href="#-attributes"><span class="octicon octicon-link"></span></a>
+<a name="attributes"></a> Attributes</h2>
 
 <p>There are <strong>no</strong> attributes.</p>
 
 <h2>
-<a name="-resources-and-providers" class="anchor" href="#-resources-and-providers"><span class="octicon octicon-link"></span></a><a name="lwrps"></a> Resources and Providers</h2>
+<a name="-resources-and-providers" class="anchor" href="#-resources-and-providers"><span class="octicon octicon-link"></span></a>
+<a name="lwrps"></a> Resources and Providers</h2>
 
 <p>There are <strong>no</strong> resources and providers.</p>
 
 <h2>
-<a name="-development" class="anchor" href="#-development"><span class="octicon octicon-link"></span></a><a name="development"></a> Development</h2>
+<a name="-development" class="anchor" href="#-development"><span class="octicon octicon-link"></span></a>
+<a name="development"></a> Development</h2>
 
 <ul>
 <li>Source hosted at <a href="https://github.com/ut-cookbooks/ut_base">GitHub</a>
@@ -203,7 +135,8 @@ librarian-chef install
 Ideally create a topic branch for every separate change you make.</p>
 
 <h2>
-<a name="-license-and-author" class="anchor" href="#-license-and-author"><span class="octicon octicon-link"></span></a><a name="license"></a> License and Author</h2>
+<a name="-license-and-author" class="anchor" href="#-license-and-author"><span class="octicon octicon-link"></span></a>
+<a name="license"></a> License and Author</h2>
 
 <p>Author:: <a href="https://github.com/fnichol">Fletcher Nichol</a> (<a href="mailto:fnichol@nichol.ca">fnichol@nichol.ca</a>) <a href="http://coderwall.com/fnichol"><img src="http://api.coderwall.com/fnichol/endorsecount.png" alt="endorse"></a></p>
 
