@@ -4,7 +4,7 @@ maintainer_email "fnichol@nichol.ca"
 license          "Apache 2.0"
 description      "Unicorn Tears Base"
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
-version          "1.3.0"
+version          "1.3.1"
 
 supports "ubuntu"
 supports "debian"
