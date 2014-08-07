@@ -1,3 +1,15 @@
+## 1.3.0 / 2014-08-07
+
+### Bug fixes
+
+* Verify support for CentOS platform. ([@fnichol][])
+
+### Improvements
+
+* Update cookbook dependencies (no longer and git or forked deps). ([@fnichol][])
+* Add spec coverage and code quality tooling to project. ([@fnichol][])
+
+
 ## 1.2.0 / 2014-01-26
 
 ### Improvements
