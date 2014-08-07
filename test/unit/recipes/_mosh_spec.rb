@@ -38,12 +38,12 @@ describe "ut_base::_mosh" do
       expect(node["mosh"]["install_type"]).to eq("source")
     end
 
-    it "installs boost-devel" do
-      expect(chef_run).to install_package("boost-devel")
-    end
-
-    it "installs protobuf-devel" do
-      expect(chef_run).to install_package("protobuf-devel")
+    %w[
+      boost-devel protobuf-devel zlib-devel libutempter-devel ncurses-devel tar
+    ].each do |pkg|
+      it "installs #{pkg}" do
+        expect(chef_run).to install_package(pkg)
+      end
     end
   end
 end

@@ -26,6 +26,10 @@ if platform_family?("rhel")
 
   package "boost-devel"
   package "protobuf-devel"
+  package "zlib-devel"
+  package "libutempter-devel"
+  package "ncurses-devel"
+  package "tar"
 end
 
 include_recipe "mosh"

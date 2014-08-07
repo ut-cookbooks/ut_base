@@ -2,12 +2,19 @@
 driver:
   name: vagrant
 
+provisioner:
+  name: chef_zero
+  attributes:
+    openssh:
+      server:
+        password_authentication: "yes"
+
 platforms:
-- name: ubuntu-13.04
-- name: ubuntu-12.04
-- name: centos-6.4
+  - name: ubuntu-14.04
+  - name: ubuntu-12.04
+  - name: centos-6.4
 
 suites:
-- name: default
-  run_list:
-  - recipe[ut_base]
+  - name: default
+    run_list:
+      - recipe[ut_base]
