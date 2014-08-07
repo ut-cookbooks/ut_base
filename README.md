@@ -1,13 +1,14 @@
 # <a name="title"></a> Unicorn Tears Base Chef Cookbook
 
-[![Build Status](https://travis-ci.org/ut-cookbooks/ut_base.png?branch=master)](https://travis-ci.org/ut-cookbooks/ut_base)
+[![Cookbook Version](http://img.shields.io/cookbook/v/ut_base.svg)](https://supermarket.getchef.com/cookbooks/ut_base)
+[![Build Status](http://img.shields.io/travis/ut-cookbooks/ut_base.svg)](https://travis-ci.org/ut-cookbooks/ut_base)
 
 ## <a name="description"></a> Description
 
 Chef cookbook for a Unicorn Tears baseline node.
 
 * Website: http://ut-cookbooks.github.io/ut_base/
-* Opscode Community Site: http://community.opscode.com/cookbooks/ut_base
+* Supermarket: https://supermarket.getchef.com/cookbooks/ut_base
 * Source Code: https://github.com/ut-cookbooks/ut_base
 
 This is a wrapper (or application) cookbook and is therefore good and
@@ -22,8 +23,8 @@ Simply include `recipe[ut_base]` in your run\_list.
 
 ### <a name="requirements-chef"></a> Chef
 
-Tested on 11.6.0 but newer and older version should work just fine.
-File an [issue][issues] if this isn't the case.
+Tested on 11.14.2 but newer and older version should work just fine.
+File an [issue][issues] if this isn"t the case.
 
 ### <a name="requirements-platform"></a> Platform
 
@@ -33,6 +34,7 @@ recipes run on these platforms without error:
 * ubuntu
 * debian
 * mac\_os\_x
+* centos
 
 Please [report][issues] any additional platforms so they can be added.
 
@@ -50,77 +52,8 @@ This cookbook depends on the following external cookbooks:
 * [postfix][postfix_cb]
 * [sudo][sudo_cb]
 * [ubuntu][ubuntu_cb]
-* [xcode][xcode_cb] (currently forked)
+* [xcode][xcode_cb]
 * [yum-epel][yum_epel_cb]
-
-## <a name="installation"></a> Installation
-
-Depending on the situation and use case there are several ways to install
-this cookbook. All the methods listed below assume a tagged version release
-is the target, but omit the tags to get the head of development. A valid
-Chef repository structure like the [Opscode repo][chef_repo] is also assumed.
-
-### <a name="installation-site"></a> From the Opscode Community Site
-
-To install this cookbook from the Community Site, use the *knife* command:
-
-    knife cookbook site install ut_base
-
-### <a name="installation-berkshelf"></a> Using Berkshelf
-
-[Berkshelf][berkshelf] is a cookbook dependency manager and development
-workflow assistant. To install Berkshelf:
-
-    cd chef-repo
-    gem install berkshelf
-    berks init
-
-To use the Community Site version:
-
-    echo "cookbook 'ut_base'" >> Berksfile
-    berks install
-
-Or to reference the Git version:
-
-    repo="ut-cookbooks/ut_base"
-    latest_release=$(curl -s https://api.github.com/repos/$repo/git/refs/tags \
-    | ruby -rjson -e '
-      j = JSON.parse(STDIN.read);
-      puts j.map { |t| t["ref"].split("/").last }.sort.last
-    ')
-    cat >> Berksfile <<END_OF_BERKSFILE
-    cookbook 'chgems',
-      :git => 'git://github.com/$repo.git', :branch => '$latest_release'
-    END_OF_BERKSFILE
-    berks install
-
-### <a name="installation-librarian"></a> Using Librarian-Chef
-
-[Librarian-Chef][librarian] is a bundler for your Chef cookbooks.
-To install Librarian-Chef:
-
-    cd chef-repo
-    gem install librarian
-    librarian-chef init
-
-To use the Community Site version:
-
-    echo "cookbook 'ut_base'" >> Cheffile
-    librarian-chef install
-
-Or to reference the Git version:
-
-    repo="ut-cookbooks/ut_base"
-    latest_release=$(curl -s https://api.github.com/repos/$repo/git/refs/tags \
-    | ruby -rjson -e '
-      j = JSON.parse(STDIN.read);
-      puts j.map { |t| t["ref"].split("/").last }.sort.last
-    ')
-    cat >> Cheffile <<END_OF_CHEFFILE
-    cookbook 'chgems',
-      :git => 'git://github.com/$repo.git', :ref => '$latest_release'
-    END_OF_CHEFFILE
-    librarian-chef install
 
 ## <a name="recipes"></a> Recipes
 
@@ -162,23 +95,18 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[apt_cb]:         http://community.opscode.com/cookbooks/apt
-[build_essential_cb]: http://community.opscode.com/cookbooks/build-essential
-[chef_sugar_cb]:  http://community.opscode.com/cookbooks/chef-sugar
-[git_cb]:         http://community.opscode.com/cookbooks/git
-[homebrew_cb]:    http://community.opscode.com/cookbooks/homebrew
-[mosh_cb]:        http://community.opscode.com/cookbooks/mosh
-[openssh_cb]:     http://community.opscode.com/cookbooks/openssh
-[postfix_cb]:     http://community.opscode.com/cookbooks/postfix
-[sudo_cb]:        http://community.opscode.com/cookbooks/sudo
-[ubuntu_cb]:      http://community.opscode.com/cookbooks/ubuntu
-[xcode_cb]:       http://community.opscode.com/cookbooks/xcode
-[yum_epel_cb]:    http://community.opscode.com/cookbooks/yum-epel
-
-[berkshelf]:    http://berkshelf.com/
-[chef_repo]:    https://github.com/opscode/chef-repo
-[cheffile]:     https://github.com/applicationsonline/librarian/blob/master/lib/librarian/chef/templates/Cheffile
-[librarian]:    https://github.com/applicationsonline/librarian#readme
+[apt_cb]:         https://supermarket.getchef.com/cookbooks/apt
+[build_essential_cb]: https://supermarket.getchef.com/cookbooks/build-essential
+[chef_sugar_cb]:  https://supermarket.getchef.com/cookbooks/chef-sugar
+[git_cb]:         https://supermarket.getchef.com/cookbooks/git
+[homebrew_cb]:    https://supermarket.getchef.com/cookbooks/homebrew
+[mosh_cb]:        https://supermarket.getchef.com/cookbooks/mosh
+[openssh_cb]:     https://supermarket.getchef.com/cookbooks/openssh
+[postfix_cb]:     https://supermarket.getchef.com/cookbooks/postfix
+[sudo_cb]:        https://supermarket.getchef.com/cookbooks/sudo
+[ubuntu_cb]:      https://supermarket.getchef.com/cookbooks/ubuntu
+[xcode_cb]:       https://supermarket.getchef.com/cookbooks/xcode
+[yum_epel_cb]:    https://supermarket.getchef.com/cookbooks/yum-epel
 
 [fnichol]:      https://github.com/fnichol
 [repo]:         https://github.com/ut-cookbooks/ut_base
