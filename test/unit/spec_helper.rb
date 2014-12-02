@@ -6,3 +6,11 @@ RSpec.configure do |config|
 end
 
 ChefSpec.define_matcher :apt_repository
+
+# turn off ChefSpec deprecations unless asked for
+unless ENV["DEPRECATIONS"]
+  module Kernel
+    def deprecated(*_)
+    end
+  end
+end
