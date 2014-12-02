@@ -21,6 +21,32 @@ describe "ut_base::_compiler" do
       stub_command("which git")
     end
 
+    it "sets the xcode url attribute" do
+      chef_run
+
+      expect(node["xcode"]["url"]).to eq("niner")
+    end
+
+    it "sets the xcode cli url attribute" do
+      chef_run
+
+      expect(node["xcode"]["cli"]["url"]).to eq("niner_cli")
+    end
+
+    it "sets the xcode checksum attribute, if given" do
+      node.set["ut_base"]["xcode"]["mac_os_x-10.9"]["checksum"] = "checka"
+      chef_run
+
+      expect(node["xcode"]["checksum"]).to eq("checka")
+    end
+
+    it "sets the xcode cli checksum attribute, if given" do
+      node.set["ut_base"]["xcode"]["mac_os_x-10.9"]["cli_checksum"] = "yep"
+      chef_run
+
+      expect(node["xcode"]["cli"]["checksum"]).to eq("yep")
+    end
+
     it "dies if mac/version key is not set" do
       node.set["ut_base"]["xcode"]["mac_os_x-10.9"] = nil
 

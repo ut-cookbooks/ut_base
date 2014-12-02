@@ -25,6 +25,13 @@ if platform_family?("mac_os_x")
   node.set["xcode"]["url"] = distro["url"]
   node.set["xcode"]["cli"]["url"] = distro["cli_url"]
 
+  if distro["checksum"]
+    node.set["xcode"]["checksum"] = distro["checksum"]
+  end
+  if distro["cli_checksum"]
+    node.set["xcode"]["cli"]["checksum"] = distro["cli_checksum"]
+  end
+
   include_recipe "xcode"
 
   include_recipe "homebrew"
