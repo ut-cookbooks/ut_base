@@ -47,6 +47,20 @@ describe "ut_base::_compiler" do
       expect(node["xcode"]["cli"]["checksum"]).to eq("yep")
     end
 
+    it "sets the xcode license attribute, if given" do
+      node.set["ut_base"]["xcode"]["mac_os_x-10.9"]["last_gm_license"] = "aaa"
+      chef_run
+
+      expect(node["xcode"]["last_gm_license"]).to eq("aaa")
+    end
+
+    it "sets the xcode license version attribute, if given" do
+      node.set["ut_base"]["xcode"]["mac_os_x-10.9"]["version"] = "1.2.3"
+      chef_run
+
+      expect(node["xcode"]["version"]).to eq("1.2.3")
+    end
+
     it "dies if mac/version key is not set" do
       node.set["ut_base"]["xcode"]["mac_os_x-10.9"] = nil
 

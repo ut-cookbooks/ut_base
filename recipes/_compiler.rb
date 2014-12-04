@@ -31,6 +31,12 @@ if platform_family?("mac_os_x")
   if distro["cli_checksum"]
     node.set["xcode"]["cli"]["checksum"] = distro["cli_checksum"]
   end
+  if distro["last_gm_license"]
+    node.set["xcode"]["last_gm_license"] = distro["last_gm_license"]
+  end
+  if distro["version"]
+    node.set["xcode"]["version"] = distro["version"]
+  end
 
   include_recipe "xcode"
 
