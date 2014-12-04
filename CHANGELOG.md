@@ -1,3 +1,10 @@
+## 1.5.0 / 2014-12-03
+
+### New features
+
+* Add xcode license support for newer versions of xcode. ([@fnichol][])
+
+
 ## 1.4.0 / 2014-12-03
 
 ### New features
