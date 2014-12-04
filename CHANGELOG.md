@@ -1,3 +1,10 @@
+## 1.4.0 / 2014-12-03
+
+### New features
+
+* Add xcode checksumming to _compiler recipe for Mac. ([@fnichol][])
+
+
 ## 1.3.0 / 2014-08-07
 
 ### Bug fixes
