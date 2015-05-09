@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "chefspec"
-gem "chef-sugar"
+gem "chef-sugar", "~> 3.0"
 gem "emeril"
 gem "finstyle",   "= 1.4.0"
 gem "foodcritic", "= 4.0.0"

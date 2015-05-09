@@ -14,7 +14,7 @@ supports "mac_os_x"
 # please see Cheffile for any special/specific versions for forks
 depends "apt",              "~> 2.0"
 depends "build-essential",  "~> 2.0"
-depends "chef-sugar",       "~> 2.0"
+depends "chef-sugar",       "~> 3.0"
 depends "git",              "~> 4.0"
 depends "homebrew",         "~> 1.4"
 depends "mosh",             "~> 0.3"
