@@ -23,7 +23,7 @@ Simply include `recipe[ut_base]` in your run\_list.
 
 ### <a name="requirements-chef"></a> Chef
 
-Tested on 11.14.2 but newer and older version should work just fine.
+Tested on 11 but newer and older version should work just fine.
 File an [issue][issues] if this isn"t the case.
 
 ### <a name="requirements-platform"></a> Platform
