@@ -9,9 +9,3 @@ cookbook "ut_base", :path => "."
 cookbook "xcode",
   :git => "https://github.com/fnichol/xcode.git",
   :ref => "mac-1010-109-updates"
-
-# pending merge of https://github.com/jssjr/git/pull/69
-# and next release
-cookbook "git",
-  :git => "https://github.com/fnichol/git.git",
-  :ref => "fix-mac-provider"

@@ -15,7 +15,7 @@ supports "mac_os_x"
 depends "apt",              "~> 2.0"
 depends "build-essential",  "~> 2.0"
 depends "chef-sugar",       "~> 3.0"
-depends "git"               # pending release
+depends "git",              "~> 4.2"
 depends "homebrew",         "~> 1.4"
 depends "mosh",             "~> 0.3"
 depends "openssh",          "~> 1.2"
