@@ -18,7 +18,8 @@
 #
 
 if platform_family?("mac_os_x")
-  key = "mac_os_x-#{node["platform_version"].to_f}"
+  version = Gem::Version.new(node["platform_version"]).segments[0, 2].join(".")
+  key = "mac_os_x-#{version}"
   distro = node["ut_base"]["xcode"][key]
   raise %{You must set node["ut_base"]["xcode"]["#{key}"]} if distro.nil?
 
