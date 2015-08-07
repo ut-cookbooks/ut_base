@@ -1,16 +1,29 @@
+## 1.7.0 / 2015-08-07
+
+### New features
+
+* Remove `apple-gcc42` package from \_compiler for Mac. ([@fnichol][])
+* Add `htop` package for Mac OS X platforms. ([@fnichol][])
+
+### Improvements
+
+* Add `vendor/*` exclude to Rubocop config. ([@fnichol][])
+* Speed up TravisCI runs. ([@fnichol][])
+
+
 ## 1.6.0 / 2015-07-18
 
 ### Bug fixes
 
-* Fix support for Mac OS X 10.10. (@fnichol)
+* Fix support for Mac OS X 10.10. ([@fnichol][])
 
 ### Improvements
 
-* Update to finstyle 1.4.0. (@fnichol)
-* Update to chef-sugar ~> 3.0. (@fnichol)
-* Confirm this cookbook works with Ubuntu 15.04. (@fnichol)
-* Confirm this cookbook works with CentOS 7.1. (@fnichol)
-* Confirm this cookbook works with Debian 8.1. (@fnichol)
+* Update to finstyle 1.4.0. ([@fnichol][])
+* Update to chef-sugar ~> 3.0. ([@fnichol][])
+* Confirm this cookbook works with Ubuntu 15.04. ([@fnichol][])
+* Confirm this cookbook works with CentOS 7.1. ([@fnichol][])
+* Confirm this cookbook works with Debian 8.1. ([@fnichol][])
 
 
 ## 1.5.0 / 2014-12-03
