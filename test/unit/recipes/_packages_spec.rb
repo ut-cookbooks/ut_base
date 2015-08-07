@@ -26,6 +26,10 @@ describe "ut_base::_packages" do
     it "installs the pstree package" do
       expect(chef_run).to install_package("pstree")
     end
+
+    it "installs the htop-osx package" do
+      expect(chef_run).to install_package("htop-osx")
+    end
   end
 
   describe "for ubuntu platform" do
