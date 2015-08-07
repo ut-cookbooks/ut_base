@@ -42,9 +42,6 @@ if platform_family?("mac_os_x")
   include_recipe "xcode"
 
   include_recipe "homebrew"
-
-  homebrew_tap "homebrew/dupes"
-  package "apple-gcc42"
 else
   include_recipe "build-essential"
 end

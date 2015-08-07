@@ -74,14 +74,6 @@ describe "ut_base::_compiler" do
     it "include the homebrew recipe" do
       expect(chef_run).to include_recipe("homebrew")
     end
-
-    it "adds homebrew/dupes tap" do
-      expect(chef_run).to tap_homebrew_tap("homebrew/dupes")
-    end
-
-    it "installs apple-gcc42 homebrew package" do
-      expect(chef_run).to install_package("apple-gcc42")
-    end
   end
 
   describe "for non-mac platforms" do
