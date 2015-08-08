@@ -3,9 +3,3 @@
 site "https://supermarket.chef.io/api/v1"
 
 cookbook "ut_base", :path => "."
-
-# pending merge of https://github.com/chef-osx/xcode/pull/5
-# and next release
-cookbook "xcode",
-  :git => "https://github.com/fnichol/xcode.git",
-  :ref => "mac-1010-109-updates"
