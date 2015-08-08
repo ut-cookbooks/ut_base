@@ -2,8 +2,7 @@ name             "ut_base"
 maintainer       "Fletcher Nichol"
 maintainer_email "fnichol@nichol.ca"
 license          "Apache 2.0"
-description      "Unicorn Tears Base"
-long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
+description      "Unicorn Tears Base Cookbook"
 version          "1.7.1"
 
 supports "ubuntu"

@@ -1,75 +1,76 @@
-# <a name="title"></a> Unicorn Tears Base Chef Cookbook
+# Unicorn Tears Base Chef Cookbook
 
-[![Cookbook Version](http://img.shields.io/cookbook/v/ut_base.svg)](https://supermarket.getchef.com/cookbooks/ut_base)
+[![Cookbook Version](http://img.shields.io/cookbook/v/ut_base.svg)](https://supermarket.chef.io/cookbooks/ut_base)
 [![Build Status](http://img.shields.io/travis/ut-cookbooks/ut_base.svg)](https://travis-ci.org/ut-cookbooks/ut_base)
 
-## <a name="description"></a> Description
-
-Chef cookbook for a Unicorn Tears baseline node.
-
 * Website: http://ut-cookbooks.github.io/ut_base/
-* Supermarket: https://supermarket.getchef.com/cookbooks/ut_base
+* Supermarket: https://supermarket.chef.io/cookbooks/ut_base
 * Source Code: https://github.com/ut-cookbooks/ut_base
+
+A Chef cookbook for a Unicorn Tears baseline node. This could be a server,
+virtual machine, or even a workstation--it's the most basic common set of
+behavior we want when we manage a node.
 
 This is a wrapper (or application) cookbook and is therefore good and
 opinionated about application and configuration defaults. Feel free to try it,
 fork and modify it, or just read and learn.
 
-## <a name="usage"></a> Usage
+## Usage
 
-Simply include `recipe[ut_base]` in your run\_list.
+Simply include `recipe[ut_base]` in your run-list.
 
-## <a name="requirements"></a> Requirements
+## Requirements
 
-### <a name="requirements-chef"></a> Chef
+* Chef 11 or higher
 
-Tested on 11 but newer and older version should work just fine.
-File an [issue][issues] if this isn"t the case.
+## Platform Support
 
-### <a name="requirements-platform"></a> Platform
+This cookbook is tested on the following platforms with [Test Kitchen][test_kitchen]:
 
-The following platforms have been tested with this cookbook, meaning that the
-recipes run on these platforms without error:
+* CentOS 7.1 64-bit
+* Debian 8.1 64-bit
+* Mac OS X 10.9
+* Mac OS X 10.10
+* Ubuntu 12.04 64-bit
+* Ubuntu 14.04 64-bit
+* Ubuntu 15.04 64-bit
 
-* ubuntu
-* debian
-* mac\_os\_x
-* centos
+Unlisted platforms in the same family of similar or equivalent versions may
+work without modification to this cookbook. Please [report][issues] any
+additional platforms so they can be added.
 
-Please [report][issues] any additional platforms so they can be added.
-
-### <a name="requirements-cookbooks"></a> Cookbooks
+## Cookbook Dependencies
 
 This cookbook depends on the following external cookbooks:
 
-* [apt][apt_cb]
-* [build-essential][build_essential_cb]
-* [chef-sugar][chef_sugar_cb]
-* [git][git_cb]
-* [homebrew][homebrew_cb]
-* [mosh][mosh_cb]
-* [openssh][openssh_cb]
-* [postfix][postfix_cb]
-* [sudo][sudo_cb]
-* [ubuntu][ubuntu_cb]
-* [xcode][xcode_cb]
-* [yum-epel][yum_epel_cb]
+* [apt](https://supermarket.chef.io/cookbooks/apt)
+* [build-essential](https://supermarket.chef.io/cookbooks/build-essential)
+* [chef-sugar](https://supermarket.chef.io/cookbooks/chef-sugar)
+* [git](https://supermarket.chef.io/cookbooks/git)
+* [homebrew](https://supermarket.chef.io/cookbooks/homebrew)
+* [mosh](https://supermarket.chef.io/cookbooks/mosh)
+* [openssh](https://supermarket.chef.io/cookbooks/openssh)
+* [postfix](https://supermarket.chef.io/cookbooks/postfix)
+* [sudo](https://supermarket.chef.io/cookbooks/sudo)
+* [ubuntu](https://supermarket.chef.io/cookbooks/ubuntu)
+* [xcode](https://supermarket.chef.io/cookbooks/xcode)
+* [yum-epel](https://supermarket.chef.io/cookbooks/yum-epel)
 
-## <a name="recipes"></a> Recipes
+## Recipes
 
-### <a name="recipes-default"></a> default
+### default
 
 Main recipe which includes all internal recipes.
 
-## <a name="attributes"></a> Attributes
+## Attributes
 
 There are **no** attributes.
 
-## <a name="lwrps"></a> Resources and Providers
+## Resources and Providers
 
 There are **no** resources and providers.
 
-## <a name="development"></a> Development
+## Development
 
 * Source hosted at [GitHub][repo]
 * Report issues/Questions/Feature requests on [GitHub Issues][issues]
@@ -77,7 +78,7 @@ There are **no** resources and providers.
 Pull requests are very welcome! Make sure your patches are well tested.
 Ideally create a topic branch for every separate change you make.
 
-## <a name="license"></a> License and Author
+## License and Author
 
 Author:: [Fletcher Nichol][fnichol] (<fnichol@nichol.ca>) [![endorse](http://api.coderwall.com/fnichol/endorsecount.png)](http://coderwall.com/fnichol)
 
@@ -95,18 +96,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[apt_cb]:         https://supermarket.getchef.com/cookbooks/apt
-[build_essential_cb]: https://supermarket.getchef.com/cookbooks/build-essential
-[chef_sugar_cb]:  https://supermarket.getchef.com/cookbooks/chef-sugar
-[git_cb]:         https://supermarket.getchef.com/cookbooks/git
-[homebrew_cb]:    https://supermarket.getchef.com/cookbooks/homebrew
-[mosh_cb]:        https://supermarket.getchef.com/cookbooks/mosh
-[openssh_cb]:     https://supermarket.getchef.com/cookbooks/openssh
-[postfix_cb]:     https://supermarket.getchef.com/cookbooks/postfix
-[sudo_cb]:        https://supermarket.getchef.com/cookbooks/sudo
-[ubuntu_cb]:      https://supermarket.getchef.com/cookbooks/ubuntu
-[xcode_cb]:       https://supermarket.getchef.com/cookbooks/xcode
-[yum_epel_cb]:    https://supermarket.getchef.com/cookbooks/yum-epel
+[test_kitchen]: http://kitchen.ci
 
 [fnichol]:      https://github.com/fnichol
 [repo]:         https://github.com/ut-cookbooks/ut_base
