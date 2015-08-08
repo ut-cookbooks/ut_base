@@ -3,7 +3,7 @@ maintainer       "Fletcher Nichol"
 maintainer_email "fnichol@nichol.ca"
 license          "Apache 2.0"
 description      "Unicorn Tears Base Cookbook"
-version          "1.7.1"
+version          "1.7.2"
 
 supports "ubuntu"
 supports "debian"

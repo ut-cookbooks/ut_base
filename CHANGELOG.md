@@ -1,3 +1,11 @@
+## 1.7.2 / 2015-08-08
+
+### Improvements
+
+* Update xcode cookbook dependency to use released upstream version. ([@fnichol][])
+* Update README.md formatting. ([@fnichol][])
+
+
 ## 1.7.0 / 2015-08-07
 
 ### New features
